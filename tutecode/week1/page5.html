@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Cheese</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+				/*const wait = () => {
+				  setTimeout(() => {
+				  	console.log('Done');
+				  }, 1000);
+				};
+
+				console.log('Part 1');
+				wait();
+				console.log('Part 2');
+				wait();
+				console.log('Part 3');*/
+
+				const wait = (callback) => {
+				  setTimeout(() => {
+				  	callback();
+				  }, 1000);
+
+				  setTimeout(callback, 1000);
+				};
+
+				console.log('Part 1');
+				wait(() => {
+					console.log('Part 2');
+					wait(() => {
+						console.log('Part 3');
+					});
+				});
+
+		</script>
+	</body>
+</html>

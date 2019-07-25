@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Cheese</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			const name = 'hayden';
+
+			const printName = (n) => {
+			  console.log('Hello ' + n);
+			};
+
+			printName(name);
+
+			////////////////
+
+			const getName = () => {
+			  return 'hayden';
+			};
+
+			const printName2 = (n) => {
+			  const result = n();
+			  console.log('Hello ' + result);
+			};
+
+			printName2(getName);
+
+		</script>
+	</body>
+</html>
