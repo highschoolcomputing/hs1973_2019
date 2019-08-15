@@ -1,0 +1,20 @@
+{
+  "name": "hs1973",
+  "version": "1.0.0",
+  "description": "HS1973",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./server/src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/highschoolcomputing/hs1973_2019.git"
+  },
+  "author": "Hayden Smith",
+  "license": "ISC"
+}
