@@ -16,7 +16,8 @@ class Home extends Component {
       name: '',
     };
     this.updateText = this.updateText.bind(this);
-    setInterval(this.props.getName, 1000);
+    this.props.getName();
+    //setInterval(, 1000);
   }
 
   updateText(e) {

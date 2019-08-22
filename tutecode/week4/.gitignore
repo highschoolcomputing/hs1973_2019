@@ -1,0 +1,4 @@
+node_modules/*
+.eslint*
+server/global_state.json
+global_state.json
