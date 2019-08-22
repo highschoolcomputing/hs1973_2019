@@ -26,7 +26,7 @@ module.exports = {
    * Simple echo endpoint that will return what you passed in.
    * Used to test if system is functioning correctly
    */
-  'name/set': {
+  'name/set': { // http://localhost:8081/api/name/set
     type: 'GET',
     middleware: [ middlewareExample ],
     terminal: nameSet,

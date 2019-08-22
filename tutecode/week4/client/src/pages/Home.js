@@ -16,13 +16,13 @@ class Home extends Component {
       name: '',
     };
     this.updateText = this.updateText.bind(this);
-    this.props.getName();
+    setInterval(this.props.getName, 1000);
   }
 
   updateText(e) {
     this.setState({
       name: e.target.value,
-    })
+    });
   }
 
   render() {
@@ -30,6 +30,7 @@ class Home extends Component {
       <div>
         <Header />
         <input type="text" onChange={this.updateText} />
+        <div>Name: {this.state.name}</div>
         <button onClick={() => this.props.setName(this.state.name)}>Click me</button>
         <div>Name: {this.props.name}</div>
       </div>

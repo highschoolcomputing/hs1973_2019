@@ -7,8 +7,8 @@ const initial_state = {
   name: '',
 };
 
-export default function users(state = initial_state, action) {
-  console.log(state, action);
+const user = (state = initial_state, action) => {
+  console.log('reducer', state, action);
   switch (action.type) {
     case USER_NAME_SET:
       return Object.assign({}, initial_state, {
@@ -22,3 +22,5 @@ export default function users(state = initial_state, action) {
       return state;
   }
 }
+
+export default user;

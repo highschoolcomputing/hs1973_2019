@@ -7,9 +7,7 @@ import * as User from '../actions/User';
 
 import Header from '../components/Header';
 
-import './Home.scss';
-
-class Home extends Component {
+class About extends Component {
   constructor(props) {
     super(props);
   }
@@ -32,5 +30,5 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(
-  Home
+  About
 );
