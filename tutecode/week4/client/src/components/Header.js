@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
   	return (
       <div>
-      	<Link to="/">Home</Link> | <Link to="/about">About</Link>
+      	<Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/christmas">Christmas</Link>
       	<hr />
       </div>
     );

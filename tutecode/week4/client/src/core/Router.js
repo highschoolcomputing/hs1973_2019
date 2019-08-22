@@ -7,6 +7,7 @@ import {
 
 import Home from '../pages/Home';
 import About from '../pages/About';
+import Christmas from '../pages/Christmas';
 
 class Router extends Component {
   render() {
@@ -25,6 +26,13 @@ class Router extends Component {
             path="/about"
             render={props => (
               <About {...props} />
+            )}
+          />
+          <Route
+            exact
+            path="/christmas"
+            render={props => (
+              <Christmas {...props} />
             )}
           />
         </Switch>
